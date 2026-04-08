@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "compounds": [
+        {
+            "name": "Run Portfolio App",
+            "configurations": [
+                "Vite Dev Server",
+                "Open Portfolio in Chrome"
+            ]
+        }
+    ],
+    "configurations": [
+        {
+            "type": "node-terminal",
+            "request": "launch",
+            "name": "Vite Dev Server",
+            "command": "npm run dev"
+        },
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Open Portfolio in Chrome",
+            "url": "http://localhost:5173",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}
